@@ -1,0 +1,15 @@
+{
+  "scraped_at": "2024-04-30T10:00:00Z",
+  "total_count": 150,
+  "scholarships": [
+    {
+      "name": "Postdoc in Topology",
+      "provider": "University of Oxford",
+      "level": ["postdoctoral"],
+      "deadline": "2024-05-15",
+      "major_tags": ["math", "topology"],
+      "application_url": "https://mathprograms.org/...",
+      "source": "mathprograms"
+    }
+  ]
+}
