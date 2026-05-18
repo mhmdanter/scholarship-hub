@@ -11,8 +11,7 @@ if str(BASE_DIR) not in sys.path:
 
 # --- 2. THE UPDATED IMPORTS ---
 # We change 'database' to 'db' here:
-from db.db_manager import upload_to_supabase
-
+from backend.db.db_manager import upload_to_supabase
 # These stay the same
 from scrapers.mathprograms_spider import MathProgramsSpider
 from scrapers.scholars4dev_spider import Scholars4DevSpider

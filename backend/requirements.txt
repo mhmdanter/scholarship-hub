@@ -1,6 +1,6 @@
-supabase
-playwright
-playwright-stealth
-fastapi
-uvicorn
-python-dotenv
+supabase==2.4.0
+python-dotenv==1.0.1
+playwright==1.44.0
+playwright-stealth==1.0.6
+fastapi==0.111.0
+uvicorn==0.30.1
