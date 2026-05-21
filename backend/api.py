@@ -1,39 +1,55 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-from .db.db_manager import supabase # Reusing your existing client
+from .db.db_manager import supabase 
 from typing import List, Optional
 
 app = FastAPI(title="Scholarship Hub API")
 
-# 1. Enable CORS (Allows your Frontend to talk to your Backend)
+# 1. Enable CORS - UPDATED for better security but keeping flexible
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=[
+        "http://localhost:3000",
+        "http://10.4.5.216:3000", #  network IP here
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 @app.get("/")
 def home():
-    return {"message": "Scholarship Hub API is Online"}
+    return {"message": "Scholarship Hub API is Online", "status": "Ready"}
 
-# 2. Route to get all scholarships with optional filtering
+# 2. Optimized Scholarship Route
 @app.get("/scholarships")
 def get_scholarships(
-    tag: Optional[str] = None, 
-    limit: int = 20
+    category: Optional[str] = None, 
+    search: Optional[str] = None,
+    limit: int = 100  # Increased limit to show more items initially
 ):
-    query = supabase.table("scholarships").select("*").limit(limit)
+    # Start the query
+    query = supabase.table("scholarships").select("*").order("id", desc=True)
     
-    if tag:
-        # Use your auto-generated tags to filter
-        query = query.contains("major_tags", [tag])
+    # Filter by Category if provided (matches your Frontend Buttons)
+    if category and category != "All":
+        query = query.eq("category", category)
+    
+    # Filter by Search term (Searching in title)
+    if search:
+        query = query.ilike("title", f"%{search}%")
         
-    response = query.execute()
+    response = query.limit(limit).execute()
     return response.data
 
 # 3. Route to get a single scholarship by ID
 @app.get("/scholarships/{item_id}")
 def get_scholarship_detail(item_id: int):
-    response = supabase.table("scholarships").select("*").eq("id", item_id).single().execute()
-    return response.data
+    # eq("id", item_id) ensures we get the exact match
+    response = supabase.table("scholarships").select("*").eq("id", item_id).execute()
+    
+    if not response.data:
+        return {"error": "Scholarship not found"}
+        
+    return response.data[0]

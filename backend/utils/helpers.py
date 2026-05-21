@@ -1,6 +1,12 @@
 import random
 import time
-from playwright_stealth import stealth_sync
+
+# Optional import for playwright stealth helpers. If the package is not
+# available in the environment, we don't need it for these utilities.
+try:
+    from playwright_stealth import stealth_sync  # type: ignore
+except Exception:
+    stealth_sync = None
 
 # A list of top-tier mobile and desktop User-Agents
 USER_AGENTS = [

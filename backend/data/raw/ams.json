@@ -1839,7 +1839,7 @@
     {
         "title": "contact us",
         "description": "contact us",
-        "url": "https://www.ams.org/cgi-bin/fmail/fmail.cgi?emailto=52616e646f6d4956ca4b98e33f9f2157e7de19c6a704e749d130dc403f9a40b13c2cab2301984438&amp;name=AMS%20Opportunities",
+        "url": "https://www.ams.org/cgi-bin/fmail/fmail.cgi?emailto=52616e646f6d49568ccb4befc1d6dd12b634fb1c296eb9eb4ca89cd171ccebc5cdd87a94e9d0e078&amp;name=AMS%20Opportunities",
         "provider": "AMS",
         "category": "Mathematics",
         "level": "PhD/Postdoc",
@@ -1848,8 +1848,8 @@
         "funding_type": "Fellowship"
     },
     {
-        "title": "NSF Division of Mathematical Sciences Active Funding Opportunities",
-        "description": "NSF Division of Mathematical Sciences Active Funding Opportunities",
+        "title": "NSF Mathematical Sciences Active Funding Opportunities",
+        "description": "NSF Mathematical Sciences Active Funding Opportunities",
         "url": "https://www.nsf.gov/funding/programs.jsp?org=DMS",
         "provider": "AMS",
         "category": "Mathematics",
@@ -1914,39 +1914,6 @@
         "funding_type": "Fellowship"
     },
     {
-        "title": "Facilitated Graduate Admissions Program (F-GAP) 2026-2027 Nominations",
-        "description": "Facilitated Graduate Admissions Program (F-GAP) 2026-2027 Nominations",
-        "url": "https://www.ams.org/opportunities/view/listing?listing_id=494429",
-        "provider": "AMS",
-        "category": "Mathematics",
-        "level": "PhD/Postdoc",
-        "country": "USA",
-        "deadline": "Varies",
-        "funding_type": "Fellowship"
-    },
-    {
-        "title": "[Read More]",
-        "description": "[Read More]",
-        "url": "https://www.ams.org/opportunities/view/listing?listing_id=494429",
-        "provider": "AMS",
-        "category": "Mathematics",
-        "level": "PhD/Postdoc",
-        "country": "USA",
-        "deadline": "Varies",
-        "funding_type": "Fellowship"
-    },
-    {
-        "title": "Math Alliance at the AMS",
-        "description": "Math Alliance at the AMS",
-        "url": "http://ams.org/math-alliance",
-        "provider": "AMS",
-        "category": "Mathematics",
-        "level": "PhD/Postdoc",
-        "country": "USA",
-        "deadline": "Varies",
-        "funding_type": "Fellowship"
-    },
-    {
         "title": "MathILy, MathILy-Er",
         "description": "MathILy, MathILy-Er",
         "url": "https://www.ams.org/opportunities/view/listing?listing_id=494385",
@@ -1972,6 +1939,39 @@
         "title": "Mathematical Staircase, Inc.",
         "description": "Mathematical Staircase, Inc.",
         "url": "http://www.mathily.org",
+        "provider": "AMS",
+        "category": "Mathematics",
+        "level": "PhD/Postdoc",
+        "country": "USA",
+        "deadline": "Varies",
+        "funding_type": "Fellowship"
+    },
+    {
+        "title": "Facilitated Graduate Admissions Program (F-GAP) 2026-2027 Nominations",
+        "description": "Facilitated Graduate Admissions Program (F-GAP) 2026-2027 Nominations",
+        "url": "https://www.ams.org/opportunities/view/listing?listing_id=494442",
+        "provider": "AMS",
+        "category": "Mathematics",
+        "level": "PhD/Postdoc",
+        "country": "USA",
+        "deadline": "Varies",
+        "funding_type": "Fellowship"
+    },
+    {
+        "title": "[Read More]",
+        "description": "[Read More]",
+        "url": "https://www.ams.org/opportunities/view/listing?listing_id=494442",
+        "provider": "AMS",
+        "category": "Mathematics",
+        "level": "PhD/Postdoc",
+        "country": "USA",
+        "deadline": "Varies",
+        "funding_type": "Fellowship"
+    },
+    {
+        "title": "Math Alliance at the AMS",
+        "description": "Math Alliance at the AMS",
+        "url": "http://ams.org/math-alliance",
         "provider": "AMS",
         "category": "Mathematics",
         "level": "PhD/Postdoc",
