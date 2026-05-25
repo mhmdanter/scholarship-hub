@@ -1,13 +1,10 @@
 import type { NextConfig } from "next";
 
-const experimental: any = {
-  //IP to access the dev server
-  allowedDevOrigins: ["10.4.5.216", "localhost:3000"],
-};
-
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental,
+  // Move this OUT of experimental
+  allowedDevOrigins: ['10.4.5.216', 'localhost:3000'],
+  
+  /* other options here */
 };
 
 export default nextConfig;

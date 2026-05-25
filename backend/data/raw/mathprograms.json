@@ -120,11 +120,6 @@
         "url": "https://www.mathprograms.org/db/programs/1920"
     },
     {
-        "title": "AMSICM26EST",
-        "provider": "MathPrograms.org",
-        "url": "https://www.mathprograms.org/db/programs/1911"
-    },
-    {
         "title": "GSTGSECF26",
         "provider": "MathPrograms.org",
         "url": "https://www.mathprograms.org/db/programs/1906"
@@ -140,9 +135,9 @@
         "url": "https://www.mathprograms.org/db/programs/1865"
     },
     {
-        "title": "POSTBAC1",
+        "title": "PCMIRFP28",
         "provider": "MathPrograms.org",
-        "url": "https://www.mathprograms.org/db/programs/1874"
+        "url": "https://www.mathprograms.org/db/programs/1925"
     },
     {
         "title": "ABSTRACTS",
@@ -178,5 +173,10 @@
         "title": "YMCTA26",
         "provider": "MathPrograms.org",
         "url": "https://www.mathprograms.org/db/programs/1910"
+    },
+    {
+        "title": "PDESCHOOL26",
+        "provider": "MathPrograms.org",
+        "url": "https://www.mathprograms.org/db/programs/1839"
     }
 ]
