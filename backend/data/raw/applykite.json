@@ -66,6 +66,17 @@
         "funding_type": "Varies"
     },
     {
+        "title": "Chevening Scholarships 2026Shana 28 May 2026",
+        "description": "Chevening Scholarships 2026Shana 28 May 2026",
+        "url": "https://applykite.com/blog/scholarship-guide-chevening-scholarships",
+        "provider": "ApplyKite",
+        "category": "Scholarship",
+        "level": "Master/PhD",
+        "country": "Various",
+        "deadline": "Varies",
+        "funding_type": "Varies"
+    },
+    {
         "title": "Top Scholarships for Indian Students to Study Abroad (2026)Applykite 13 May 2026",
         "description": "Top Scholarships for Indian Students to Study Abroad (2026)Applykite 13 May 2026",
         "url": "https://applykite.com/blog/phd-guide-scholarships-for-indian-students",
@@ -80,17 +91,6 @@
         "title": "GKS Scholarship 2027: Early Preparation Guide & TimelineShana 12 May 2026",
         "description": "GKS Scholarship 2027: Early Preparation Guide & TimelineShana 12 May 2026",
         "url": "https://applykite.com/blog/phd-guide-scholarship-korea-2027-preparation",
-        "provider": "ApplyKite",
-        "category": "Scholarship",
-        "level": "Master/PhD",
-        "country": "Various",
-        "deadline": "Varies",
-        "funding_type": "Varies"
-    },
-    {
-        "title": "PhD Acceptance Rates: How Competitive Is Getting a PhD Position?Shana 7 May 2026",
-        "description": "PhD Acceptance Rates: How Competitive Is Getting a PhD Position?Shana 7 May 2026",
-        "url": "https://applykite.com/blog/phd-guide-acceptance-rates",
         "provider": "ApplyKite",
         "category": "Scholarship",
         "level": "Master/PhD",
@@ -266,7 +266,7 @@
     {
         "title": "Affiliation",
         "description": "Affiliation",
-        "url": "https://dashboard.applykite.com/affiliation/dashboard",
+        "url": "https://applykite.com/affiliate",
         "provider": "ApplyKite",
         "category": "Scholarship",
         "level": "Master/PhD",

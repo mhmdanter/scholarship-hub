@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css"; // ← THIS was missing!
 
 export const metadata: Metadata = {
   title: "Scholarship Hub | Find Your Next Opportunity",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     siteName: "ScholarshipHub",
     images: [
       {
-        url: "/og-image.png", // Put a nice preview image in your public folder
+        url: "/og-image.png",
         width: 1200,
         height: 630,
       },

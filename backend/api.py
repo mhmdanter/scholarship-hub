@@ -1,64 +1,70 @@
 import fastapi
+import os
 from fastapi.middleware.cors import CORSMiddleware
-from .db.db_manager import supabase
+from .db.db_manager import supabase # Ensure this uses os.environ for URL/Key
 from typing import Optional
+from fastapi.responses import JSONResponse
 
 app = fastapi.FastAPI(title="Scholarship Hub API")
 
-# 1. Enable CORS - UPDATED for better security but keeping flexible
-
+# Update CORS for Production
+# Once you have your Vercel URL, replace "*" with ["https://your-app.vercel.app"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://10.4.5.216:3000",  # network IP here
-    ],
-    allow_credentials=True,
+    allow_origins=["*"], 
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.get("/")
 def home():
     return {"message": "Scholarship Hub API is Online", "status": "Ready"}
 
-
-# 2. Optimized Scholarship Route
-
 @app.get("/scholarships")
 def get_scholarships(
     category: Optional[str] = None,
     search: Optional[str] = None,
-    limit: int = 100  # Increased limit to show more items initially
+    limit: int = 100
 ):
-    # Start the query
-    query = supabase.table("scholarships").select("*").order("id", desc=True)
+    try:
+        query = supabase.table("scholarships").select("*")
 
-    # Filter by Category if provided (matches your Frontend Buttons)
-    if category and category != "All":
-        query = query.eq("category", category)
+        if category and category != "All":
+            query = query.eq("opportunity_type", category)
 
-    # Filter by Search term (Searching in title)
-    if search:
-        query = query.ilike("title", f"%{search}%")
+        if search:
+            # Searches across name or provider
+            query = query.or_(f"name.ilike.%{search}%,provider.ilike.%{search}%")
 
-    response = query.limit(limit).execute()
-    return response.data
+        response = query.order("id", desc=True).limit(limit).execute()
+        return response.data
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": "Database connection failed"})
 
-
-# 3. Route to get a single scholarship by ID
 @app.get("/scholarships/{item_id}")
 def get_scholarship_detail(item_id: str):
-    # This now accepts the long UUID string from your logs
-    response = (
-        supabase.table("scholarships")
-        .select("*")
-        .eq("id", item_id)
-        .execute()
-    )
-
-    if not response.data:
-        return {"error": "Scholarship not found"}, 404
-
-    return response.data[0]
+    try:
+        # strip() is vital to prevent 404s from accidental URL spaces
+        clean_id = item_id.strip()
+        
+        response = (
+            supabase.table("scholarships")
+            .select("*")
+            .eq("id", clean_id)
+            .maybe_single()
+            .execute()
+        )
+        
+        if not response.data:
+            return JSONResponse(
+                status_code=404, 
+                content={"error": f"Scholarship {clean_id} not found"}
+            )
+            
+        return response.data
+    except Exception as e:
+        return JSONResponse(
+            status_code=500, 
+            content={"error": "An internal server error occurred"}
+        )

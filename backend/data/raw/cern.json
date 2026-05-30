@@ -319,17 +319,6 @@
         "funding_type": "Paid Internship"
     },
     {
-        "title": "Campus, Organisational and Corporate ServicesCampus, Organisational and Corporate ServicesExplore this career",
-        "description": "Campus, Organisational and Corporate ServicesCampus, Organisational and Corporate ServicesExplore this career",
-        "url": "https://careers.cern/explore-careers/03-campus/",
-        "provider": "CERN",
-        "category": "Research Internship",
-        "level": "Master/PhD",
-        "country": "Switzerland",
-        "deadline": "Varies",
-        "funding_type": "Paid Internship"
-    },
-    {
         "title": "Civil EngineeringCivil EngineeringCreating an inspiring and welcoming environment for CERN's scientific community by managing and developing CERN's buildings and infrastructures.Explore this career",
         "description": "Civil EngineeringCivil EngineeringCreating an inspiring and welcoming environment for CERN's scientific community by managing and developing CERN's buildings and infrastructures.Explore this career",
         "url": "https://careers.cern/explore-careers/civil-engineering/",
@@ -355,17 +344,6 @@
         "title": "Electrical or Electronics EngineeringElectrical or Electronics EngineeringPivotal in designing, developing, and maintaining the sophisticated systems that power our cutting-edge experiments.Explore this career",
         "description": "Electrical or Electronics EngineeringElectrical or Electronics EngineeringPivotal in designing, developing, and maintaining the sophisticated systems that power our cutting-edge experiments.Explore this career",
         "url": "https://careers.cern/explore-careers/electrical-or-electronics-engineering/",
-        "provider": "CERN",
-        "category": "Research Internship",
-        "level": "Master/PhD",
-        "country": "Switzerland",
-        "deadline": "Varies",
-        "funding_type": "Paid Internship"
-    },
-    {
-        "title": "EngineeringEngineeringExplore this career",
-        "description": "EngineeringEngineeringExplore this career",
-        "url": "https://careers.cern/explore-careers/02-engineering/",
         "provider": "CERN",
         "category": "Research Internship",
         "level": "Master/PhD",
@@ -432,17 +410,6 @@
         "title": "Mechanical EngineeringMechanical EngineeringMechanical Engineering at CERN is crucial to advancing technology and enabling cutting-edge scientific discoveries. Our engineers design, build, and maintain sophisticated machinery, complex accelerator systems and experimental facilities that power some of the world’s most complex and impactful experiments.Explore this career",
         "description": "Mechanical EngineeringMechanical EngineeringMechanical Engineering at CERN is crucial to advancing technology and enabling cutting-edge scientific discoveries. Our engineers design, build, and maintain sophisticated machinery, complex accelerator systems and experimental facilities that power some of the world’s most complex and impactful experiments.Explore this career",
         "url": "https://careers.cern/explore-careers/mechanical-engineering/",
-        "provider": "CERN",
-        "category": "Research Internship",
-        "level": "Master/PhD",
-        "country": "Switzerland",
-        "deadline": "Varies",
-        "funding_type": "Paid Internship"
-    },
-    {
-        "title": "PhysicsPhysicsExplore this career",
-        "description": "PhysicsPhysicsExplore this career",
-        "url": "https://careers.cern/explore-careers/01-physics/",
         "provider": "CERN",
         "category": "Research Internship",
         "level": "Master/PhD",
@@ -662,7 +629,7 @@
     {
         "title": "Member States",
         "description": "Member States",
-        "url": "https://home.cern/about/who-we-are/our-governance/member-states",
+        "url": "https://home.cern/about/who-we-are/member-states/",
         "provider": "CERN",
         "category": "Research Internship",
         "level": "Master/PhD",
